@@ -1,14 +1,15 @@
-<h1>Lista de Empresas</h1>
-<div class="container">
-  <div class="box" *ngFor="let rep of retornos">
-    <h2>{{rep.razao_social}}</h2>
-    <hr>
-    <p><b>CNPJ: </b>{{rep.estabelecimento.cnpj}}</p>
-    <p><b>Nome Fantasia: </b>{{rep.estabelecimento.nome_fantasia}}</p>
-    <p><b>Endereço: </b>{{rep.estabelecimento.logradouro}}, {{rep.estabelecimento.numero}}</p>
-    <p>{{rep.estabelecimento.cidade.nome}} - CEP {{rep.estabelecimento.cep}}</p>
-    <p><b>CNAE: </b>{{rep.estabelecimento.atividade_principal.subclasse}}</p>
-    <p><b>Telefone: </b>({{rep.estabelecimento.ddd1}}) {{rep.estabelecimento.telefone1}}</p>
+<tui-root>
+  <h1>Lista de Empresas</h1>
+  <div class="container">
+    <div class="box" *ngFor="let rep of retornos">
+      <h2>{{rep.razao_social}}</h2>
+      <hr>
+      <p><b>CNPJ: </b>{{rep.estabelecimento.cnpj}}</p>
+      <p><b>Nome Fantasia: </b>{{rep.estabelecimento.nome_fantasia}}</p>
+      <p><b>Endereço: </b>{{rep.estabelecimento.logradouro}}, {{rep.estabelecimento.numero}}</p>
+      <p>{{rep.estabelecimento.cidade.nome}} - CEP {{rep.estabelecimento.cep}}</p>
+      <p><b>CNAE: </b>{{rep.estabelecimento.atividade_principal.subclasse}}</p>
+      <p><b>Telefone: </b>({{rep.estabelecimento.ddd1}}) {{rep.estabelecimento.telefone1}}</p>
+    </div>
   </div>
-</div>
-
+</tui-root>
