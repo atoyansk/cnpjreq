@@ -6,10 +6,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LoginComponent } from './auth/login/login.component';
+import { MainComponent } from './interface/main/main.component';
+import { NavbarComponent } from './interface/navbar/navbar.component';
+import { ManageComponent } from './interface/manage/manage.component';
+import { UsersComponent } from './interface/users/users.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    MainComponent,
+    NavbarComponent,
+    ManageComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
